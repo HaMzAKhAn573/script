@@ -24,7 +24,7 @@ except:ugen = ['Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS; Nokia 7610;451) O
 try:ugen2 = open('user2.txt','r').read().splitlines()
 except:ugen2 = ['Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS; Nokia 7610;451) Opera 6.20'] #Aziz
 
-id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
+old id,old id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 
 x = '\033[93m'
 k = '\033[93m'
@@ -69,7 +69,6 @@ thn = datetime.datetime.now().year
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 
-my_id = '100007061760822'
 
 def jalan(z):
     for e in z + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.04)
@@ -133,15 +132,14 @@ def setting():
 	baloch = input(x+'   \x1b[1;90m[\x1b[1;97m>_\x1b[1;90m]\x1b[1;97m Pilih Cil\x1b[1;90m :\x1b[1;92m ')
 	if baloch in ['1','01']:
 		method.append('api')
-	else:
+	else: Asad
 		method.append('api')
 	print("""%s \x1b[38;5;248m────────────────────────────────────────────────────────────\x1b[92;1m """%(h))
 	fast = input(x+'   \x1b[1;90m[\x1b[1;97m>_\x1b[1;90m]\x1b[1;97m Ingin Memulai? \x1b[1;90m(\x1b[1;92mY\x1b[1;90m/\x1b[1;91mT\x1b[1;90m)\x1b[1;90m :\x1b[1;92m ')
 	if fast in ['y','Y']:
 		passwrd()
 	elif fast in ['t','T']:
-		os.system("xdg-open https://youtube.com/channel/UCq6XovNRc3U5YaolAZ0DEsA")
-		exit()
+		
 
 def passwrd():
 	clear()
@@ -187,7 +185,7 @@ def crack2(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print('\r%s   [HAMZA] %s/%s  OK/%s | CP/%s : %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print('\r%s   [Asad] %s/%s  OK/%s | CP/%s : %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen).replace('\n','')
 	ses = requests.Session()
 	for pw in pwv:
